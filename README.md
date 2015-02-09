@@ -1,4 +1,4 @@
-Building FFMPEG on Windows Phone
+Building FFMPEG for Windows Phone
 
 Prerequisites
 ------------
