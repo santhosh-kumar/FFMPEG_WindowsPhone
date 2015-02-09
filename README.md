@@ -25,7 +25,9 @@ Building
 1) cd into ffmpeg folder
 
 2) Apply the patches from Git command line client by invoking:
+```
 ./applyPatches.sh
+```
 
 3) Open "VS2012 ARM Cross Tools Command Prompt"
 
@@ -33,18 +35,26 @@ Building
 C:/MinGw/msys/1.0/bin/msys.bat
 
 5) Using the newly opened msys+mingw window, change directory to ffmpeg.2.4:
+```
 cd ffmpeg/ffmpeg.2.4
+```
 
 6) Invoke the build script (no option means debug):
+```
 ./build_ffmpeg_msvc.sh
+```
 
 If the build fails due to duplicate link.exe in msys, need to rename msys version of link.exe so that the visual studio link.exe is used.
 
 7) In order to build in release mode:
+```
 ./build_ffmpeg_msvc.sh release
+```
 
 8) For a quick build without re-configuring:
+```
 ./build_ffmpeg_msvc.sh quick
+```
 
 9) Output static libraries will be stored in ffmpeg/build/<debug/release> folder
 
